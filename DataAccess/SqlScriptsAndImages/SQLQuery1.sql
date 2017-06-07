@@ -1,0 +1,12 @@
+﻿USE JLBSampleDB;
+GO
+
+TRUNCATE TABLE Password;
+GO
+
+DELETE FROM Person;
+GO
+
+DBCC CHECKIDENT   
+	(Person, RESEED, 0);
+GO 
